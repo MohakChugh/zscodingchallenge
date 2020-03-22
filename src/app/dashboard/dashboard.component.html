@@ -10,7 +10,7 @@
               <ul class="nav navbar-nav text-light" id="accordionSidebar">
                   <!-- <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                   <li class="nav-item" role="presentation"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li> -->
-                  <li class="nav-item" role="presentation"><a class="nav-link"  routerLinkActive="router-link-active" ]><i class="fas fa-table"></i><span>Table</span></a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" ><i class="fas fa-table" (click)="table()"></i><span>Table</span></a></li>
                   <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
                   <li class="nav-item" role="presentation"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li> -->
               </ul>
@@ -124,6 +124,11 @@
                   </ul>
           </div>
           </nav>
+          <div *ngIf="tableshow">
+          <app-table></app-table>
+
+          </div>
+
           <div class="container-fluid">
               <div class="d-sm-flex justify-content-between align-items-center mb-4">
                   <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a></div>

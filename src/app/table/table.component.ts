@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-table',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
-  constructor() { }
+  data: any;
+  constructor() {
+    axios.get('http://localhost:3000/')
+    .then(response => {
+      this.data = response;
+      this.data = this.data.data.sales;
+      console.table(this.data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+   }
 
   ngOnInit(): void {
   }

@@ -7,6 +7,7 @@ import axios from 'axios';
 })
 export class DashboardComponent implements OnInit {
 
+  tableshow = false;
   data: any;
   totalrev = 0;
   constructor() {
@@ -25,6 +26,10 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+  table() {
+    console.log(this.tableshow);
+    this.tableshow = !this.tableshow;
   }
 
 }
