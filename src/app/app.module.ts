@@ -9,10 +9,11 @@ import { ChartsModule } from 'ng2-charts';
 import { PieChartComponent } from './piechart/piechart.component';
 import { BarchartComponent } from './barchart/barchart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ChartsModule ],
-  declarations: [ AppComponent, PieChartComponent, BarchartComponent, DashboardComponent ],
+  declarations: [ AppComponent, PieChartComponent, BarchartComponent, DashboardComponent, TableComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
