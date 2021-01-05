@@ -21,7 +21,7 @@
     "@angular/router": "~9.0.7",
     "@types/d3": "^5.7.2",
     "angular-d3-charts": "^5.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "d3": "^5.15.0",
     "graphql-request": "^1.8.2",
